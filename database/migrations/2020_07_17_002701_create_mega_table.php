@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTestTable extends Migration
+class CreateMegaTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,12 @@ class CreateTestTable extends Migration
      */
     public function up()
     {
-        Schema::create('test', function (Blueprint $table) {
+        Schema::create('mega', function (Blueprint $table) {
             $table->id();
+            $table->string('delivery');
+            $table->string('sale');
+            $table->string('order');
             $table->timestamps();
-            $table->string('name');
         });
     }
 
@@ -27,6 +29,6 @@ class CreateTestTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('test');
+        Schema::dropIfExists('mega');
     }
 }
