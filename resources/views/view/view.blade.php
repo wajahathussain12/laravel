@@ -15,7 +15,7 @@
 </head>
 <body>
 <div class="flex-center position-ref full-height">
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-light bg-light" style="background-color: #636b6f">
         <a class="navbar-brand">Laravel Test</a>
         <form class="form-inline">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -27,13 +27,13 @@
         <div>
         <ul class="nav nav-pills nav-justified">
             <li class="nav-item">
-                <a class="nav-link active" href="{{$query ->delivery}}">{{$query ->delivery}}</a>
+                <a class="nav-link active" href="{{$query ->id}}">{{$query ->delivery}}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{$query ->sale}}">{{$query ->sale}}</a>
+                <a class="nav-link" href="{{$query ->id}}">{{$query ->sale}}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{$query ->order}}">{{$query ->order}}</a>
+                <a class="nav-link" href="{{$query ->id}}">{{$query ->order}}</a>
             </li>
         </ul>
 
